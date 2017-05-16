@@ -5,19 +5,28 @@ import {
 } from 'material-ui';
 import NestedList from './NestedList';
 
-const LoginButton = () => (
-    <FlatButton label="Login" />
-)
+const LoginButton = (props) => (
+    <FlatButton
+        {...props}
+        label="Login"
+    />
+);
 
 const LockButton = () => (
     <IconButton iconClassName="muidocs-icon-custom-github" />
 );
 
+const styles = {
+    title: {
+        cursor: 'pointer',
+    },
+};
+
 const Header = () => {
     return (
         <div>
             <AppBar
-                title="Seowon Mobile"
+                title={<span style={styles.title}>Seowon Mobile</span>}
                 titleStyle={{ textAlign: 'center' }}
                 onTitleTouchTap={
                     () => {console.log('111');}

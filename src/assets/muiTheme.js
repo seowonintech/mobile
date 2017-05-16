@@ -16,6 +16,6 @@ export const muiTheme = getMuiTheme({
   },
   appBar: {
     color: blue500,
-    height: 50,
+    // height: 50,
   },
 });
