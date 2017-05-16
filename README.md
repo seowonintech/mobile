@@ -53,3 +53,7 @@ mimetype.assign = (
         ".svgz" => "image/svg+xml",
 ) 
 ```
+
+## Example
+
+[example](./img/example.png)
