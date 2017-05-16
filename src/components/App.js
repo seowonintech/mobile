@@ -6,10 +6,13 @@ import {
   Route
 } from 'react-router-dom';
 // Material-UI
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import { RaisedButton } from 'material-ui';
+import {
+  MuiThemeProvider,
+  AppBar, RaisedButton
+} from 'material-ui';
 // Custom
+import { muiTheme } from '../assets';
 import Header from './Header';
 import Home from '../routes/Home';
 import About from '../routes/About';
@@ -21,9 +24,10 @@ injectTapEventPlugin();
 const App = () => {
   return (
     <Router>
-      <MuiThemeProvider>
+      <MuiThemeProvider muiTheme={muiTheme}>
         <div>
           <Header />
+          <AppBar title="App Bar" />
 
           <RaisedButton label="Default" />
 
