@@ -1,5 +1,11 @@
 # Seowon Mobile
 
+Todo List
+- `/mobile` 폴더 사용 설정
+- [material-ui](http://www.material-ui.com/) 적용
+- [Chart.js](http://www.chartjs.org/) 적용
+- [Travis CI](https://travis-ci.org/getting_started) 적용
+
 ## Build
 
 ```
@@ -46,8 +52,3 @@ mimetype.assign = (
         ".svgz" => "image/svg+xml",
 ) 
 ```
-
-### `/mobile` 폴더 사용 설정
-
-TODO..
-
