@@ -14,6 +14,7 @@ import {
 // Custom
 import { muiTheme } from '../assets';
 import Header from './Header';
+import Footer from './Footer';
 import Home from '../routes/Home';
 import About from '../routes/About';
 
@@ -31,9 +32,12 @@ const App = () => {
           <RaisedButton label="Default" />
 
           <hr/>
+
           {/* Route컴포넌트의 component속성 components와 헷갈리지 말자. */}
           <Route exact path="/" component={Home}/>
           <Route path="/about" component={About}/>
+          
+          <Footer />
         </div>
       </MuiThemeProvider>
     </Router>
