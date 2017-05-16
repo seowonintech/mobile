@@ -3,6 +3,7 @@
 Todo List
 - `/mobile` 폴더 사용 설정
 - [material-ui](http://www.material-ui.com/) 적용
+  - [Roboto폰트 적용](https://fonts.google.com/specimen/Roboto?selection.family=Roboto)
 - [Chart.js](http://www.chartjs.org/) 적용
 - [Travis CI](https://travis-ci.org/getting_started) 적용
 
