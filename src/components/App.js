@@ -9,7 +9,7 @@ import {
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import {
   MuiThemeProvider,
-  AppBar, RaisedButton
+  RaisedButton
 } from 'material-ui';
 // Custom
 import { muiTheme } from '../assets';
@@ -27,7 +27,6 @@ const App = () => {
       <MuiThemeProvider muiTheme={muiTheme}>
         <div>
           <Header />
-          <AppBar title="App Bar" />
 
           <RaisedButton label="Default" />
 
