@@ -13,11 +13,16 @@ import {
 } from 'material-ui';
 // Custom
 import { muiTheme } from '../assets';
-import Header from './Header';
-import SubHeader from './SubHeader';
-import Footer from './Footer';
-import Home from '../routes/Home';
-import About from '../routes/About';
+import {
+  Header,
+  SubHeader,
+  Footer,
+} from '.';
+import {
+  Home,
+  About,
+  MQTT,
+} from '../routes';
 
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941

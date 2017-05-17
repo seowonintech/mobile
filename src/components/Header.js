@@ -1,20 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  AppBar, IconButton, FlatButton
+  AppBar
 } from 'material-ui';
-import NestedList from './NestedList';
-
-const LoginButton = (props) => (
-    <FlatButton
-        {...props}
-        label="Login"
-    />
-);
-
-const LockButton = () => (
-    <IconButton iconClassName="muidocs-icon-custom-github" />
-);
+import { 
+    NestedList,
+    LeftMenu,
+    LoginButton,
+} from '.';
 
 const styles = {
     title: {
@@ -31,10 +24,10 @@ const Header = () => {
                 onTitleTouchTap={
                     () => {console.log('111');}
                 }
-                iconElementRight={<LoginButton />}
+                iconElementLeft={<LeftMenu />}
+                iconElementRight={<LoginButton logged={true} />}
                 zDepth={2}
             >
-                <NestedList />
             </AppBar>
         </div>
     );
