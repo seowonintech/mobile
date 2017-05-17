@@ -14,6 +14,7 @@ import {
 // Custom
 import { muiTheme } from '../assets';
 import Header from './Header';
+import SubHeader from './SubHeader';
 import Footer from './Footer';
 import Home from '../routes/Home';
 import About from '../routes/About';
@@ -28,6 +29,7 @@ const App = () => {
       <MuiThemeProvider muiTheme={muiTheme}>
         <div>
           <Header />
+          <SubHeader />
 
           <RaisedButton label="Default" />
 

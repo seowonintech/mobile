@@ -12,6 +12,12 @@ import { Link } from 'react-router-dom';
 const recentsIcon = <FontIcon className="material-icons">restore</FontIcon>;
 const nearbyIcon = <IconLocationOn />;
 
+const styles = {
+    paper: {
+        zDepth: 1,
+    },
+};
+
 class Footer extends Component {
     constructor(props) {
         super(props);
@@ -28,7 +34,7 @@ class Footer extends Component {
 
     render() {
         return (
-            <Paper zDepth={1}>
+            <Paper style={styles.paper}>
                 <BottomNavigation selectedIndex={this.state.selectedIndex}>
                     <BottomNavigationItem 
                         label="Home"
